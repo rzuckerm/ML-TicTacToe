@@ -1,0 +1,165 @@
+body
+{
+    font-family: Arial;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+p, select, button
+{
+    font-size: 24px;
+}
+
+h1
+{
+    font-size: 36px;
+}
+
+label
+{
+    font-weight: bold;
+}
+
+button
+{
+    color: white;
+    background-color: green;
+    border-radius: 12px;
+    border: 2px outset gray;
+    cursor: pointer;
+}
+
+button[disabled="disabled"]
+{
+    background-color: gray;
+    cursor: default;
+}
+
+button:not([disabled="disabled"]):hover
+{
+    background-color: darkgreen;
+}
+
+table
+{
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.board td
+{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: default;
+}
+
+.board .x, .board .o
+{
+    font-size: 48px;
+}
+
+.x
+{
+    color: red;
+}
+
+.o
+{
+    color: blue;
+}
+
+.board .empty, .board .empty-disabled
+{
+    font-size: 36px;
+}
+
+.board .empty
+{
+    color: black;
+    cursor: pointer;
+}
+
+.board .empty:hover
+{
+    text-decoration: underline;
+}
+
+.board .empty-disabled
+{
+    color: gray;
+    cursor: default;
+}
+
+.board .win
+{
+    font-size: 72px;
+}
+
+.win, .draw
+{
+    font-weight: bold;
+}
+
+.draw
+{
+    color: black;
+}
+
+.left-col, .right-col, .top-row, .bottom-row
+{
+    border-width: 10px;
+}
+
+.left-col
+{
+    border-right-color: black;
+    border-right-style: solid;
+}
+
+.right-col
+{
+    border-left-color: black;
+    border-left-style: solid;
+}
+
+.top-row
+{
+    border-bottom-color: black;
+    border-bottom-style: solid;
+}
+
+.bottom-row
+{
+    border-top-color: black;
+    border-top-style: solid;
+}
+
+.status
+{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.waiting, .error
+{
+    padding: 10px;
+}
+
+.waiting
+{
+    border: 1px solid black;
+    background-color: lightgray;
+    color: black;
+}
+
+.error
+{
+    border: 1px solid red;
+    background-color: yellow;
+    color: red;
+}
