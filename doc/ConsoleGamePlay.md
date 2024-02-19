@@ -15,7 +15,6 @@ while True:
 ```
 
 ## Select Players
---------------
 
 ```
 select X player (human or some type of computer player)
